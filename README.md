@@ -1,2 +1,3 @@
-# Hi
-## This is just a simple form validation script.
+# Hi 👋
+
+### This is just a simple form validation script.
