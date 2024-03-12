@@ -3,6 +3,7 @@ function zeroValue(){
     document.getElementById('name').value=''
     document.getElementById('prn').value=''
     document.getElementById('cgpa').value=''
+    document.getElementById('result').innerHTML=''
 
 }
 
@@ -11,9 +12,14 @@ function validate(){
     const prn = document.getElementById('prn').value;
     const cgpa = document.getElementById('cgpa').value;
 
-    var p = document.getElementById('p');
+    var result = document.getElementById('result');
     if (name == "" || prn == "" || cgpa == ""){
         alert('Please fill all the fields');
+        return;
+    }
+    if (name.charAt(0) !== name.charAt(0).toUpperCase()) {
+        alert('Name should start with a capital letter');
+        zeroValue();
         return;
     }
 
@@ -28,11 +34,11 @@ function validate(){
         return;
     }else{
         if(cgpa>=8){
-            p.innerHTML = "You are Valid for the Placement Round";
-            p.style.color = "green";
+            result.innerHTML = "Eligible";
+            result.style.color = "green";
         }else{
-            p.innerHTML = "You are not Valid for the Placement Round";
-            p.style.color="red";
+            result.innerHTML = "Not Eligible";
+            result.style.color="red";
         }
     }
 }
