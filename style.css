@@ -1,0 +1,16 @@
+body{
+    display: grid;
+    place-content: center;
+    height: 50vh;
+    margin: 0;
+}
+form{
+    display: grid;
+    place-content: center;
+    gap: 10px;
+    width: fit-content;
+}
+#subBtn{
+    width: min-content;
+    margin-left: auto;
+}

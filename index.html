@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            Sign Up Form
+        </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1>Sign Up</h1>
+        <form>
+                <div>
+                    <label for="name">Name </label>
+                    <input type="text" id="name"  placeholder="Username"/>
+                </div>
+                
+                <div>
+                    <label for="prn">PRN </label>
+                    <input type="number" id="prn"  placeholder="PRN"/>
+                </div>
+                
+                <div>
+                    <label for="cgpa">CGPA </label>
+                    <input type="text" id="cgpa" placeholder="CGPA">
+                </div>
+
+                    <button type="button" id="subBtn" onclick="validate()">Submit</button>
+                    
+                <p id="p">Result</p>
+
+            </form>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
